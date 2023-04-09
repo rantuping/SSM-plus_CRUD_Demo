@@ -1,0 +1,4 @@
+# SSMplus_CRUD_Demo
+这是一个简单的后台CRUD的Demo
+
+使用SpringBoot+MyBatisPlus进行开发

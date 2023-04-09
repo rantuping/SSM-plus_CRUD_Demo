@@ -1,0 +1,26 @@
+#定义新的端口
+server:
+  port: 1234
+
+#配置druid
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/SSMPlus_CRUDTest?serverTimezone=UTC
+      username: root
+      password: rantuping
+
+#配置mp
+mybatis-plus:
+  global-config:
+    db-config:
+#      解决数据库的文件名字前缀的问题
+      table-prefix: tbl_
+#      配置数据库的自增策略
+      id-type: auto
+
+
+  #在开发阶段可以进行日志的打印
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
